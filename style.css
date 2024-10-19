@@ -1,0 +1,160 @@
+html,
+body {
+  height: 100%; /* 페이지 전체에 그라데이션이 적용되도록 */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    to left,
+    #d3d3d3,
+    #a9a9a9
+  ) !important; /* 그라데이션 적용 */
+  background-size: cover;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    to left,
+    #d3d3d3,
+    #a9a9a9
+  ) !important; /* 그라데이션 적용과 우선순위 강화 */
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header {
+  margin-bottom: 40px; /* 더 넓은 간격을 부여 */
+}
+
+nav {
+  margin-top: 20px; /* 타이틀과 버튼 사이 간격 추가 */
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+section {
+  margin-top: 20px;
+  display: none; /* 기본적으로 모든 섹션을 숨김 */
+}
+
+#profile {
+  display: block; /* 초기 화면에서 프로필 표시 */
+  margin-bottom: 0px; /* 프로필 섹션과 하단 간격 제거 */
+}
+
+h1,
+h2 {
+  color: white;
+}
+
+.project-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: left;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  position: relative; /* 고정된 위치 해제 */
+}
+.vision-box-container {
+  display: flex;
+  justify-content: space-between; /* 양옆으로 박스 배치 */
+  align-items: flex-start;
+  margin-top: 20px;
+  width: 100%;
+  flex-wrap: wrap; /* 화면 크기에 따라 박스가 자동으로 줄바꿈 */
+}
+
+.vision-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 45%; /* 각 박스의 너비를 45%로 설정 */
+  text-align: left;
+  color: white;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2); /* 옅은 테두리 추가 */
+}
+
+.vision-box h3 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .vision-box {
+    width: 100%; /* 작은 화면에서는 박스를 세로로 쌓음 */
+  }
+}
+
+.project-container,
+.vision-box-container {
+  padding-bottom: 50px; /* 하단 여백 추가 */
+}
+
+.social-icons {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.social-icons img {
+  width: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
