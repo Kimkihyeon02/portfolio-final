@@ -1,0 +1,16 @@
+{
+  "name": "your-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "scripts": {
+    "build": "echo No build step needed - static HTML/CSS/JS",
+    "start": "serve ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^14.2.4"
+  },
+  "main": "script.js"
+}
